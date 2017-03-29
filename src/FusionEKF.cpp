@@ -112,7 +112,8 @@ void FusionEKF::ProcessMeasurement(const MeasurementPackage &measurement_pack) {
       float vy = rho_dot * sin(phi);
 
       if (px == 0 or py == 0){
-        return;
+        px = 0.000001;
+        py = 0.000001;
       }
 
       ekf_.x_ << px, py, vx, vy;
@@ -158,8 +159,8 @@ void FusionEKF::ProcessMeasurement(const MeasurementPackage &measurement_pack) {
   	ekf_.F_(1, 3) = dt;
 
   	//set the process covariance matrix Q
-    float noise_ax = 6.25;
-    float noise_ay = 6.25;
+    float noise_ax = 9;
+    float noise_ay = 9;
 
   	ekf_.Q_ <<  dt_4/4*noise_ax, 0, dt_3/2*noise_ax, 0,
   			   0, dt_4/4*noise_ay, 0, dt_3/2*noise_ay,
