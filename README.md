@@ -20,10 +20,10 @@ Self-Driving Car Engineer Nanodegree Program
 
 1. Clone this repo.
 2. Make a build directory: `mkdir build && cd build`
-3. Compile on Mac: `cmake -G Xcode ..`.
+3. Compile on Mac: `cmake -G Xcode ..`
    * On windows, you may need to run: `cmake .. -G "Unix Makefiles" && make`
-4. Run it: `open UnscentedKF.xcodeproj/`.
-5. Edit scheme within Xcode: shortcut: `cmdkey+<`. Fill in arguments passed on Luanch.
+4. Run it: `open UnscentedKF.xcodeproj/`
+5. Edit scheme within Xcode: shortcut: cmdkey+< Fill in arguments passed on Luanch.
    ../../data/sample-laser-radar-measurement-data-2.txt
    output.txt
 
