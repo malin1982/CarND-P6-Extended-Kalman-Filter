@@ -111,7 +111,7 @@ void FusionEKF::ProcessMeasurement(const MeasurementPackage &measurement_pack) {
       float vx = rho_dot * cos(phi);
       float vy = rho_dot * sin(phi);
 
-      if (px == 0 or py == 0){
+      if (abs(px)<0.000001 or abs(py)<0.000001){
         px = 0.000001;
         py = 0.000001;
       }
