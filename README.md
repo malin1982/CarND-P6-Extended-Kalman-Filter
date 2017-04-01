@@ -28,7 +28,7 @@ Self-Driving Car Engineer Nanodegree Program
    output.txt
 ## Known Issue
 
-1. It works on sample data1, hangs with using sample data2 as input. Problem seems to be the normalization while () loop at the prediction step.
+1. It works on sample data1, hangs when using sample data2 as input. Problem seems to be the normalization while () loop at the prediction step.
 
 ## Editor Settings
 
