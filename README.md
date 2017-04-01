@@ -26,6 +26,9 @@ Self-Driving Car Engineer Nanodegree Program
 5. Edit scheme within Xcode: shortcut: cmdkey+< Fill in arguments passed on Luanch.
    ../../data/sample-laser-radar-measurement-data-2.txt
    output.txt
+## Known Issue
+
+1. It works on sample data1, hangs with using sample data2 as input. Problem seems to be the normalization while () loop at the prediction step.
 
 ## Editor Settings
 
